@@ -1,0 +1,446 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap');
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*end css Reset*/
+
+
+/* Author : Irwanto Siregar */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+header {
+  width: 100%;
+}
+
+.container {
+  padding: 0 120px;
+}
+
+.cont {
+  width: 100%;
+  background-color: rgba(28, 27, 26, 0.5);
+  padding: 0 80px;
+  position: absolute;
+  z-index: 10;
+  animation-name: bg-navbar;
+  animation-duration: 30s;
+}
+
+.nav .logo  {
+  width: 48px;
+  height: 48px;
+  float: left;
+  margin-right: 120px;
+}
+
+.nav a {
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: block;
+}
+
+ul li {
+    float: left;
+    overflow: hidden;
+}
+
+ul li a:not(.button) {
+  color: rgb(236, 236, 236);
+  padding: 16px 16px;
+  border-right: 1px solid rgba(245, 245, 245, 0.3);
+}
+
+ul li.right {
+  float: right;
+}
+
+ul li .button {
+  color: rgb(32, 113, 232);
+  background-color: rgb(245, 245, 245);
+  padding: 7px 16px;
+  box-shadow: 2px 3px 2px #d4d4d4;
+  font-weight: 600;
+  border-radius: 30px;
+  margin: 8px 0;
+  margin-right: 5px;
+  animation-name: bg-button;
+  animation-duration: 30s;
+}
+
+ul li .active {
+  background-color: rgba(152, 152, 152, 0.6);
+  font-weight: 600;
+}
+
+ul li a:hover:not(.button) {
+  background-color: rgba(152, 152, 152);
+}
+
+/* jumbotron */
+.jumbotron .jumbo {
+  width: 100%;
+  max-height: 450px;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+}
+
+.title h2 {
+  color: #551586;
+  font-size: 1.3em;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+}
+
+section {
+    overflow: auto;
+}
+
+/* input search  */
+.search {
+  text-align: center;
+}
+
+.search input {
+  width: 50%;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('../image/search.png');
+  background-repeat: no-repeat;
+  background-position: 15px 10px;
+  border-radius: 50px;
+  border: 2px solid #ddc;
+  padding: 10px 20px 10px 45px;
+  margin-top: 10px;
+}
+
+.search input:focus {
+  width: 55%;
+  outline: 0;
+  border-radius: 50px;
+  border: 2px solid #2483e5;
+  transition: width 1s;
+}
+
+.search input:focus::placeholder {
+  color: cornflowerblue;
+}
+
+
+/* search merk */
+.merek-mobil {
+  margin-top: 5px;
+}
+
+.other a {
+  color: #11a8a5;
+  float: right;
+  margin-right: 10px;
+  text-decoration: none;
+}
+
+.other a:hover {
+  color: #158c8a;
+  text-decoration: underline;
+}
+
+.merek {
+  width: 100%;
+  padding: 0px 60px;
+  margin-top: 30px;
+}
+
+.item-merek {
+  float: left;
+  text-align: center;
+  width: 16.066%;
+  padding: 13px 0;
+  background-color: rgb(252, 252, 252);
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px rgb(245, 245, 245);
+}
+
+.item-merek img {
+  max-width: 50px;
+  max-height: 50px;
+  transition: 0.4s ease;
+}
+
+.item-merek:hover  img {
+  transform: scale(1.07);
+}
+
+.item-merek p {
+  color: rgba(85, 21, 134, 0);
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.item-merek:hover p {
+  color: rgb(85, 21, 134);
+}
+
+
+/* Rekomendasi, pilih gaya dan populer */
+.items-card {
+  width: 100%;
+  height: auto;
+  padding-top: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+}
+
+.item {
+  background-color: #fafafa;
+  float: left;
+  width: 23%;
+  padding-bottom: 15px;
+  margin-top: 10px;
+  margin: 0 1%;
+  border-radius: 5px;
+  /* box-shadow: -6px -6px 7px #dedede inset; */
+  box-shadow: 4px 5px 4px #dbdbdb;
+}
+
+.image-mobil .image {
+  width: 100%;
+  height: 160px;
+  max-height: 100%;
+  transition: 0.4s ease;
+}
+
+.item:hover .image-mobil .image {
+  transform: scale(1.02);
+}
+
+.item h3,
+.item h4,
+.item p {
+  margin: 8px 10px 0 10px;
+}
+
+.item h3 {
+  color: #551586;
+  font-size: 17px;
+  font-weight: 500;
+  text-shadow: 1px 1px 1px #ededed
+}
+
+.item h4 {
+  color: #5c44db;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.item p {
+  color: rgba(111, 111, 111, 0.7);
+  font-weight: 500;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.item a {
+  color: rgba(36, 113, 112, 0.85);
+  font-weight: 500;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.item h6 {
+  margin: 15px 10px 3px;
+}
+
+.items-card .center {
+  text-align: center;
+}
+
+
+/* hubungi kami */
+.call-we {
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.call-we h3 {
+  color: rgb(41, 19, 117);
+  font-size: 19px;
+  font-family: 'Lora', serif;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.call-we p {
+  color: #383838;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.btn-call {
+  margin-top: 30px;
+}
+
+.btn-call a {
+  color: #fef;
+  text-decoration: none;
+  font-weight: 500;
+  background-color: rgba(9, 62, 198, 0.8);
+  padding: 7px 15px;
+  border-radius: 30px;
+  box-shadow: 2px 5px 3px #0e63b4;
+}
+
+.btn-call a:active {
+  background-color: rgba(9, 62, 198, 1);
+  position: relative;
+  box-shadow: none;
+  top: 5px;
+}
+
+/* border dan padding dr semua secsion */
+.search, .merek-mobil, .rekomendasi, .pilih-gaya, .populer {
+  padding: 50px 0;
+  border-bottom: 1px solid rgba(235, 235, 235, 0.8);
+}
+
+
+/* Footer */
+footer {
+  width: 100%;
+  background-color: rgb(247, 247, 247);
+  border-top: 1px solid rgba(232, 232, 232, 0.8);
+}
+
+.layanan, .footer {
+  overflow: hidden;
+  padding: 30px 10px;
+}
+
+.layanan .column,
+.footer .copyright {
+  float: left;
+}
+
+.layanan .column {
+  width: 25%;
+}
+
+.column a {
+  font-size: 15px;
+  color: rgba(33, 184, 174, 0.8);
+  display: block;
+  text-decoration: none;
+}
+
+.column a  {
+  margin-top: 10px;
+}
+
+.column p {
+  color: rgba(112, 112, 112, 0.8);
+  font-size: 14px;
+  font-weight: 500;
+  margin-top: 12px;
+}
+
+.column h4 {
+  color: rgb(14, 106, 140);
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.footer .copyright {
+  width: 50%;
+}
+
+.footer .text p {
+  color: rgba(128, 128, 128, 0.9);
+  font-size: 14px;;
+}
+
+.icons .icon-medsos {
+  float: right;
+  width: 35px;
+  max-width: 40px;
+  margin-left: 8px;
+  transition: 0.3s ease;
+}
+
+.icons a:hover .icon-medsos {
+  transform: scale(1.08);
+}
+
+
+@-webkit-keyframes bg-navbar {
+  75% { background-color: rgba(12, 179, 135, 0.7)};
+  50% { background-color: rgba(210, 187, 0, 1)};
+}
+
+@-webkit-keyframes bg-button {
+  75% { background-color: rgba(39, 107, 232, 0.85); color: #fbfbfb;box-shadow: 2px 3px 2px #0c3dbf;}
+}
+
+
+
+/* toggle menu icon */
+.menu-icon {
+  color: white;
+  float: right;
+  font-size: 25px;
+  padding: 10px 10px;
+  display: none;
+}

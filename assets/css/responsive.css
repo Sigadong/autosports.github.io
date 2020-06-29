@@ -1,0 +1,240 @@
+/* Author : Irwanto Siregar */
+
+/*Desktops*/
+@media screen and (max-width: 1199px) {}
+
+
+/* Mobile Lanscape */
+@media screen and (max-width: 991px) {
+  /* navbar */
+  .nav .logo {
+    margin-right: 5px;
+  }
+
+  header .cont {
+    padding: 0 40px;
+  }
+
+  .container {
+    padding: 0 60px;
+  }
+
+  /* search */
+  .search input{
+  width: 70%;
+  font-size: 14px;
+  }
+
+  .search input:focus {
+    width: 75%;
+    transition: width 0.8s;
+  }
+
+  /* mereks */
+    .merek {
+      padding: 0 0px;
+    }
+
+    .item-merek {
+      width: 33.33%;
+    }
+
+  /* items mobil  */
+    .item {
+      width: 44%;
+      margin: 15px 3%;
+    }
+
+    .layanan .column {
+      width: 50%;
+      margin: 16px 0;
+    }
+
+    /* image */
+    .image-mobil .image {
+      height: 190px;
+    }
+
+    /* font main */
+    .title h2 {
+      font-size: 18px;;
+    }
+
+    .item h3 {
+      font-size: 17px;
+    }
+
+    .item h4 {
+      font-size: 15px;
+    }
+
+    .item p {
+      font-size: 15px;
+    }
+
+    .item a {
+      font-size: 15px;
+    }
+
+    .other a {
+      font-size: 15px;
+    }
+
+    .call-we p {
+      font-size: 15px;
+    }
+
+    .footer .text p {
+      font-size: 14px;
+    }
+}
+
+
+/*Tablets*/
+@media screen and (max-width: 768px) {
+  .nav {
+    visibility: hidden;
+    height: 0;
+  }
+
+/* classList.toggle */
+  .navbar {
+    visibility: visible;
+    height: auto;
+    transition: height 2s;
+  }
+/* end classList.toggle */
+
+  .nav .logo, ul li, ul li.right {
+    float: none;
+  }
+
+   ul li.right {
+     padding: 0 35%;
+   }
+
+   .nav .logo {
+     width: 52px;
+     height: 52px;
+     margin-right: 0;
+     margin-left: 45px;
+   }
+
+   header .cont {
+     padding: 0px;
+   }
+
+  .container {
+    padding: 0 20px;
+  }
+
+  /* toggle menu icon */
+  .menu-icon {
+    display: block;
+    padding: 10px 20px 10px 0;
+  }
+
+}
+
+
+/* Mobile Potrait */
+@media screen and (max-width: 575px) {
+  .nav {
+    visibility: hidden;
+    height: 0;
+  }
+
+/* classList.toggle */
+  .navbar {
+    visibility: visible;
+    height: auto;
+    transition: height 2s;
+  }
+/* end classList.toggle */
+
+  .nav .logo, ul li, ul li.right {
+    float: none;
+  }
+
+   ul li.right {
+     padding: 0 35%;
+   }
+
+   .nav .logo {
+     margin-right: 0;
+     margin-left: 45px;
+   }
+
+   header .cont {
+     padding: 0px;
+   }
+
+  .container {
+    padding: 0 20px;
+  }
+
+/* mereks */
+  .merek {
+    padding: 0 15px;
+  }
+
+  .item-merek {
+    width: 50%;
+  }
+
+/* items mobil  */
+  .item {
+    width: 46%;
+    margin: 10px 2%;
+  }
+
+  .layanan .column {
+    width: 50%;
+    margin: 16px 0;
+  }
+
+
+  /* image */
+  .image-mobil .image {
+    height: 110px;
+  }
+
+  /* font main */
+  .title h2 {
+    font-size: 17px;;
+  }
+
+  .item h3 {
+    font-size: 16px;
+  }
+
+  .item h4 {
+    font-size: 14px;
+  }
+
+  .item p {
+    font-size: 13px;
+  }
+
+  .item a {
+    font-size: 14px;
+  }
+
+  .other a {
+    font-size: 14px;
+  }
+
+  .call-we p {
+    font-size: 14px;
+  }
+
+  .footer .text p {
+    font-size: 12px;
+  }
+
+  /* toggle menu icon */
+  .menu-icon {
+    display: block;
+    padding: 10px 20px 10px 0;
+  }
+}
