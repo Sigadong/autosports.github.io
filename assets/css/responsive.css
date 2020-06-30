@@ -129,7 +129,7 @@
   }
 
   /* toggle menu icon */
-  .menu-icon {
+  .toggle-icon {
     display: block;
     padding: 10px 20px 10px 0;
   }
@@ -173,7 +173,17 @@
     padding: 0 20px;
   }
 
-/* mereks */
+  /* search */
+  .search input{
+  width: 85%;
+  font-size: 13px;
+  }
+
+  .search input:focus {
+    width: 90%;
+  }
+
+  /* mereks */
   .merek {
     padding: 0 15px;
   }
@@ -232,8 +242,17 @@
     font-size: 12px;
   }
 
+  .column p {
+    font-size: 12px;
+  }
+
+  .icons .icon-medsos {
+    width: 25px;
+    margin-left: 5px;
+  }
+
   /* toggle menu icon */
-  .menu-icon {
+  .toggle-icon {
     display: block;
     padding: 10px 20px 10px 0;
   }

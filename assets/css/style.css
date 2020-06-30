@@ -415,7 +415,6 @@ footer {
 .icons .icon-medsos {
   float: right;
   width: 35px;
-  max-width: 40px;
   margin-left: 8px;
   transition: 0.3s ease;
 }
@@ -437,7 +436,7 @@ footer {
 
 
 /* toggle menu icon */
-.menu-icon {
+.toggle-icon {
   color: white;
   float: right;
   font-size: 25px;
