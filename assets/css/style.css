@@ -142,6 +142,7 @@ ul li a:hover:not(.button) {
   font-size: 1.3em;
   font-family: 'Lora', serif;
   font-weight: 600;
+  margin-bottom: 10px;
 }
 
 section {
