@@ -242,6 +242,7 @@ section {
 .items-card {
   width: 100%;
   height: auto;
+  padding-top: 10px;
   padding-right: 10px;
   margin-top: 10px;
 }
